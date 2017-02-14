@@ -11,7 +11,7 @@ Public Class frmMain
         'get ip from file, if it exists
         If File.Exists(IP_FILE) Then
             Using fileReader As StreamReader = New StreamReader(IP_FILE)
-                SERVER_IP = Integer.Parse(fileReader.ReadLine)
+                SERVER_IP = fileReader.ReadLine
             End Using
         End If
 
